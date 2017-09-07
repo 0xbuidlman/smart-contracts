@@ -245,17 +245,3 @@ let preAllocations = [
     { address: '0x64de9D33eb482731721a8ae490d2E5dbE14c547D', amt: new BigNumber(1396496092).mul(new BigNumber(10).toPower(12)) }
 ]
 
-module.exports = async function (callback) {
-// To be run for distribution
-  for (let i = 0; i < preAllocations.length; i++) {
-    console.log('' + i + ' Deploying ' + preAllocations[i].address + ' amt: ' + preAllocations[i].amt)
-    SwarmCrowdsale.at('0x3b13f20cb484a87d4613b0ffe2d934d9c70cccfd').presaleMint(preAllocations[i].address, preAllocations[i].amt, { gasPrice: 120000000000 })
-  }
-
-// To be run after distribution
-//   console.log('Initializing token')
-//   await SwarmCrowdsale.at('0x046418d5d8ec0fbf111f901bf34d331eee2aeaab').initializeToken()
-
-//   console.log('Transferring ownership to multisig')
-//   await SwarmCrowdsale.at('0x046418d5d8ec0fbf111f901bf34d331eee2aeaab').transferOwnership('0x8bf7b2d536d286b9c5ad9d99f608e9e214de63f0')
-}
