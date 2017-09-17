@@ -1,6 +1,6 @@
 # Swarm.Fund Token Sale
 
-This repo defines the contracts used in the Swarm.Fund token sale.  The contracts should allow a token sale to be conducted according to the requirements in the [White Paper](http://sites.swarm.fund/whitepapers/Cooperative-Ownership-Platform-for-Real-Assets.pdf).
+This repo defines the contracts used in the Swarm.Fund token sale.  The contracts should allow a token sale to be conducted according to the requirements in the [White Paper](https://swarm.fund/wp-content/uploads/Cooperative-Ownership-Platform-for-Real-Assets.pdf).
 
 ## Truffle Framework
 
